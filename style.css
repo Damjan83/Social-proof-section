@@ -14,10 +14,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
-  background-position: top left, bottom right;
-  background-repeat: no-repeat, no-repeat;
-  text-align: center;
+  font-family: 'Spartan', sans-serif;
 }
 
 ol, ul {
@@ -48,22 +45,28 @@ img {
   display: flex;
 }
 
-h1 {
+.top__text {
+  width: 35%;
+  text-align: left;
+}
+
+.top__text-title {
+  font-size: 48px;
   font-weight: 700;
-}
-
-.text {
-  font-family: 'Spartan', sans-serif;
-  font-size: 14px 40px;
+  margin-bottom: 10px;
   color: hsl(300, 43%, 22%);
-  width: 50%;
 }
 
-.star {
+.top__text-desc {
+  font-size: 15px;
+}
+
+.top__star {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  align-items: center;
+  width: 65%;
 }
 
 .star-item {
@@ -219,10 +222,10 @@ h1 {
 .wraper {  
   height: 100%;
   width: 100%;
-  padding: 0 190px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  margin: 80px 0 0 0;
+  margin: 100px auto;
 }
 
 .rated {
