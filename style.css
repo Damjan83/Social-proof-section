@@ -32,17 +32,23 @@ img {
 
 .attribution {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.wraper {  
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
 }
 
 .top {
   display: flex;
   width: 100%;
   margin-bottom: 50px;
-}
-
-.bottom {
-  width: 100%;
-  display: flex;
 }
 
 .top__text {
@@ -59,242 +65,87 @@ img {
 
 .top__text-desc {
   font-size: 15px;
+  color: hsl(303, 10%, 53%);
 }
 
 .top__star {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 65%;
+  padding-left: 170px;
 }
 
-.star-item {
-  position: relative;
+.top__star-item {
   font-size: 17px;
   font-weight: 700;
   color: hsl(300, 43%, 22%);
   border-radius: 9px;
   background: hsl(300, 24%, 95%);
-  padding: 20px 48px;
+  padding: 20px 40px;
   display: flex;
 }
 
-.star1 { 
-  right: 96px;
+.top__star-item--middle {
+  margin-left: 43px;
 }
 
-.star2 {
-  right: 48px;
+.top__star-item--bottom{
+  margin-left: 86px;
 }
 
-.klijent1 {
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__user {
   height: 200px;
-  width: 33%;
+  width: 30%;
   background-color:  hsl(300, 43%, 22%);
   border-radius: 5px;
 }
 
-.user {
+.card__user-profile {
   height: 50%;
   width: 100%;
   display: flex;
 }
 
-.user-sl {
+.card__user-img {
   height: 50px;
   width: 50px;
-  content: url("images/image-colton.jpg");
   border-radius: 50%;
   margin: 20px;
 }
 
-.username {
+.card__user-username {
   width: 100px;
   height: 50px;
   margin: 25px;
   margin-left: 0;
 }
 
-.card-user-name {
+.card__user-username-name {
   color: hsl(300, 24%, 95%);
 }
 
-.card-user-desc {
+.card__user-username-desc {
   color: #95487e;
 }
 
-.kltext {
+.card__user-text {
   color: hsl(300, 24%, 95%);
   bottom: 35px;
-  margin: 0 10px;
-  padding: 5px;
 }
 
-.klijent2 {
-  height: 200px;
-  width: 33%;
-  background-color:  hsl(300, 43%, 22%);
-  border-radius: 5px;
-  margin: 25px 47px;
-}
-
-.user2 {
-  height: 50%;
-  width: 100%;
-  display: flex;
-}
-
-.user-sl2 {
-  height: 50px;
-  width: 50px;
-  content: url("images/image-irene.jpg");
-  border-radius: 50%;
-  margin: 20px;
-}
-
-.username2 {
-  width: 100px;
-  height: 50px;
-  margin: 25px;
-  margin-left: 0;
-}
-
-.card-user-name2 {
-  color: hsl(300, 24%, 95%);
-}
-
-.card-user-desc2 {
-  color: #95487e;
-}
-
-.kltext2 {
-  color: hsl(300, 24%, 95%);
-  bottom: 35px;
-  margin: 0 10px;
-  padding: 5px;
-}
-
-.klijent3 {
-  height: 200px;
-  width: 33%;
-  background-color:  hsl(300, 43%, 22%);
-  border-radius: 5px;
-  margin: 50px 0;
-}
-
-.user3 {
-  height: 50%;
-  width: 100%;
-  display: flex;
-}
-
-.user-sl3 {
-  height: 50px;
-  width: 50px;
-  content: url("images/image-anne.jpg");
-  border-radius: 50%;
-  margin: 20px;
-}
-
-.username3 {
-  width: 100px;
-  height: 50px;
-  margin: 25px;
-  margin-left: 0;
-}
-
-.card-user-name3 {
-  color: hsl(300, 24%, 95%);
-}
-
-.card-user-desc3 {
-  color: #95487e;
-}
-
-.kltext3 {
-  color: hsl(300, 24%, 95%);
-  bottom: 35px;
-  margin: 0 10px;
-  padding: 5px;
-}
-
-.wraper {  
-  height: 100%;
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  margin: 100px auto;
-}
-
-.rated {
-  margin: 0 20px;
+.top-star-rated {
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .top {
-    flex-direction: column;
-  }
+  
 
-  .bottom {
-    flex-direction: column;
-  }
-
-  .star {
-    width: 100%;
-  }
-
-  .star1 {
-    right: 0;
-    margin: 20px 0 0 0;
-  }
-
-  .star2 {
-    right: 0;
-    margin: 15px 0 15px 0px;
-  }
-
-  .star3 {
-    right: 0;
-    margin: 0 0 20px 0;
-  }
-
-  .text {
-    text-align: center;
-    width: 100%;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .klijent1 {
-    width: 100%;
-  }
-
-  .klijent2 {
-    width: 100%;
-    margin: 20px 0 20px 0;
-  }
-
-  .klijent3 {
-    width: 100%;
-    margin: 0;
-  }
-
-  .star-item {
-    flex-direction: column;
-    padding: 10px 10px 10px 10px;
-  }
-
-  .star-zvezde1, .star-zvezde2, .star-zvezde3 {
-    text-align: center;
-  }
-
-  .rated1, .rated2, .rated3 {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
+  
 }
