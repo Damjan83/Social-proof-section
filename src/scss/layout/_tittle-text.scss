@@ -1,0 +1,22 @@
+.top {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+  
+.top__text {
+    width: 35%;
+    text-align: left;
+}
+  
+.top__text-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: hsl(300, 43%, 22%);
+}
+  
+.top__text-desc {
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+}

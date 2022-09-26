@@ -1,0 +1,33 @@
+.top__star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding-left: 170px;
+}
+
+.top__star-item {
+    font-size: 17px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    border-radius: 9px;
+    background: hsl(300, 24%, 95%);
+    padding: 20px 40px;
+    display: flex;
+}
+
+.top__star-item--middle {
+    margin-left: 43px;
+}
+
+.top__star-item--bottom {
+    margin-left: 86px;
+}
+
+.top-star-rated {
+    margin-left: 30px;
+}
+
+
+
+  
